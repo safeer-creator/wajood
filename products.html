@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Wajood</title>
+    <meta name="description" content="Browse our collection of clothing products at Wajood.">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Wajood</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products">
+            <h1>Our Products</h1>
+            <div class="filter">
+                <button onclick="filterProducts('all')">All</button>
+                <button onclick="filterProducts('men')">Men</button>
+                <button onclick="filterProducts('women')">Women</button>
+            </div>
+            <div class="product-grid" id="product-list">
+                <div class="product-card" data-category="women">
+                    <img src="placeholder.jpg" alt="Women's Dress">
+                    <h3>Women's Dress</h3>
+                    <p>$89.99</p>
+                </div>
+                <div class="product-card" data-category="men">
+                    <img src="placeholder.jpg" alt="Men's Shirt">
+                    <h3>Men's Shirt</h3>
+                    <p>$59.99</p>
+                </div>
+                <!-- Add more products as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Wajood. All rights reserved.</p>
+        <p>Contact: info@wajood.com</p>
+    </footer>
+</body>
+</html>
